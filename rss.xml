@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Wed, 08 Nov 2023 11:49:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Nov 2023 11:49:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Android 调试技巧]]></title>
+            <guid>d1d15e67db0342a1872bb56872abfc51</guid>
+            <pubDate>Wed, 19 Apr 2023 10:33:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="android-调试技巧">Android 调试技巧</h1>
+<h2 id="日志持久化存储">日志持久化存储</h2>
+<p>开发者选项 -&gt;设备上永久存储日志记录器数据
+命令设置</p>
+<div><pre class="hljs"><code>setprop <span class="hljs-keyword">log</span>.<span class="hljs-keyword">persist</span>.logcat true
+setprop logd.logpersistd.buffer <span class="hljs-literal">all</span>
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd locatd
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd.buffer <span class="hljs-literal">all</span>
+
+
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd.enable true 
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd logcatd 
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd.size <span class="hljs-number">40</span> 
+setprop <span class="hljs-keyword">persist</span>.logd.logpersistd.buffer main,system,crash
+
+/// 查看是否生效
+getprop | grep logd.logpersistd</code></pre></div>
+<p><a>日志</a></p>
+]]></content:encoded>
+        </item>
     </channel>
 </rss>
