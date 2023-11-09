@@ -4,9 +4,18 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Wed, 08 Nov 2023 12:01:35 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Nov 2023 09:21:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Dialog]]></title>
+            <guid>08932d8dcf154c0fbe76d021f2405e79</guid>
+            <pubDate>Wed, 11 Oct 2023 11:39:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 id="dialog-全屏">dialog 全屏</h3>
+<div><pre class="hljs"><code><span class="hljs-comment">/// 设置全屏</span>
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN) </code></pre></div>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Android 调试技巧]]></title>
             <guid>d1d15e67db0342a1872bb56872abfc51</guid>
